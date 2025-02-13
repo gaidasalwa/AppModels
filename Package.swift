@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "AppModels",
+    platforms: [
+        .iOS(.v15) // ✅ Spécifie que le module supporte iOS 13 minimum
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
